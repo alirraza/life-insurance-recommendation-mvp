@@ -1,0 +1,36 @@
+{
+  "name": "life-insurance-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "next dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "next build",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:frontend": "next start",
+    "start:backend": "cd backend && node server.js",
+    "lint": "next lint",
+    "db:generate": "cd backend && npm run db:generate",
+    "db:push": "cd backend && npm run db:push",
+    "db:migrate": "cd backend && npm run db:migrate",
+    "db:studio": "cd backend && npm run db:studio",
+    "install:all": "npm install && cd backend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.8.3"
+  }
+}

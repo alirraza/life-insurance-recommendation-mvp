@@ -1,0 +1,42 @@
+# Node
+node_modules/
+
+# Build outputs
+.next/
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*
+.env.local
+backend/.env
+backend/.env.*
+
+# Prisma
+backend/prisma/dev.db
+backend/prisma/*.db
+backend/prisma/*.sqlite
+backend/prisma/migrations/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+
+# Docker
+*.local
+.dockerignore
+Dockerfile 
