@@ -158,8 +158,3 @@ docker build -t life-insurance-mvp .
 - **Database:** Use a managed PostgreSQL service for reliability and backups.
 - **Environment Variables:** Always set secrets and URLs securely in your cloud provider.
 - **Scaling:** ECS supports auto-scaling and load balancing for production workloads.
-
----
-
-## License
-MIT License 
